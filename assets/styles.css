@@ -1,0 +1,143 @@
+html {
+    height: 100% !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: local("Gilroy-Regular"), url('./fonts/Gilroy-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+.theme--dark {
+    background: linear-gradient(
+            296.84deg,
+            #232B30 69.03%,
+            #213637 79.99%,
+            #1F403D 87.13%,
+            #0FA37B 125.56%,
+            #0AC18E 137.05%
+    ) !important;
+    line-height: 1.5;
+}
+
+.wrapper {
+    margin: auto;
+    width: 530px;
+    padding: 2rem;
+    margin-top: 6.5rem;
+}
+
+.bitcoincom-logo {
+    top: 1rem;
+    left: 1rem;
+    width: 30px;
+    height: auto;
+    position: absolute;
+    display: none;
+}
+
+.lottery-logo {
+    top: 2rem;
+    left: 2rem;
+    position: absolute;
+}
+
+.title {
+    font-size: 1.25rem !important;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #fff;
+    letter-spacing: 0.0125em !important;
+    font-family: Gilroy-Regular, sans-serif !important;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    margin: 2rem 1rem 0 0;
+    height: 45px;
+    width: 45px;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    margin: 2rem 1rem 0 0;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: Gilroy-Regular, sans-serif;
+}
+
+hr {
+    border: 1px solid rgba(185, 189, 198, 0.5);
+    margin: 2rem 0;
+}
+
+.casino-link {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(10, 193, 142);
+    border-radius: 4px;
+    margin: 0;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    font-family: Gilroy-Regular, sans-serif;
+}
+
+.contact-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(8, 192, 142);
+    background-color: transparent;
+    border-radius: 4px;
+    margin: 0;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    font-family: Gilroy-Regular, sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper {
+        margin: auto;
+        width: auto;
+        padding: 3rem 2rem 2rem;
+    }
+
+    .bitcoincom-logo {
+        display: block;
+    }
+
+    .lottery-logo {
+        display: none;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .casino-link,
+    .contact-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
